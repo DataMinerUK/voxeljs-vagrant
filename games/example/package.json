@@ -1,0 +1,8 @@
+{
+    "name": "example",
+    "version": "0.0.1",
+    "devDependencies": {
+        "voxel-engine": "0.3.6",
+        "painterly-textures": "0.0.2"
+    }
+}

@@ -1,0 +1,13 @@
+Vagrant::Config.run do |config|
+
+  config.vm.box = "voxeljs"
+
+  # Needs an exported VM image in the current directory.
+  # Can use a URL in the following to download remote images.
+  config.vm.box_url = "voxeljs.box"
+
+  config.vm.host_name = "voxeljs"
+  config.vm.customize [ "modifyvm", :id, "--name", "voxeljs" ]
+
+  config.vm.forward_port 80, 8080
+end

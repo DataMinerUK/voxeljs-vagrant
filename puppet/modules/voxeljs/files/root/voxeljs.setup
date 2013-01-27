@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Browserify to compile
+npm install -g browserify
+
+touch /root/voxeljs.done
