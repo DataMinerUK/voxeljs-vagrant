@@ -1,0 +1,15 @@
+{
+    "name" : "png2json",
+    "version" : "0.0.1",
+    "description" : "generate voxel terrain using a png heightmap",
+    "dependencies" : {
+        "pngjs": "0.4.0-alpha",
+        "dreamopt" : "0.8.0"
+    },
+    "author" : {
+        "name" : "Greg Smith",
+        "email" : "gsmith@incompl.com",
+        "url" : "http://incompl.com"
+    },
+    "license" : "MIT"
+}
