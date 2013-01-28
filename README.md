@@ -42,6 +42,11 @@ Then compile the game using [browserify]:
 
     browserify new-game.js > new-game-compiled.js
 
+The generated Javascript can be fairly large so you may want to run it
+through [uglifyjs].
+
+    uglifyjs -c new-game-compiled.js > new-game-compiled.min.js
+
 HTML files in `games/new-game` will be served from the VM via port forwarding
 to your host machine at, e.g.:
 
@@ -59,9 +64,10 @@ from this packaged VM.
 
 
 
-[voxel.js]: http://voxeljs.com/
+[voxel.js]: http://voxeljs.com
 [virtualbox]: https://www.virtualbox.org/wiki/Downloads
 [vagrant]: http://vagrantup.com
-[node.js]: http://nodejs.org/
-[browserify]: http://browserify.org/
+[node.js]: http://nodejs.org
+[browserify]: http://browserify.org
+[uglifyjs]: https://github.com/mishoo/UglifyJS
 

@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Browserify to compile
+# Browserify to compile voxel.js games for client side.
 npm install -g browserify
+
+# Uglify to compress browserify generated code.
+npm install -g uglify-js
+
 
 touch /root/voxeljs.done
